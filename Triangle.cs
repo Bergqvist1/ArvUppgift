@@ -16,9 +16,9 @@ namespace ArvUppgift
             return a;
       }
 
-      public int circumferance()
+      public double Circumferance()
       {
-            int c = height + width + 5;
+            double c = height + width + Math.Sqrt(height*width + height*width);
             return c;
       }
     }
