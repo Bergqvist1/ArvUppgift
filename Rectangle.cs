@@ -11,12 +11,12 @@ namespace ArvUppgift
 
         }
 
-        public int Area()
+        override public int Area()
         {
             return (this.width * this.height);
         }
 
-        public int Circumferance()
+        override public double Circumferance()
         {
             
             return (this.width *2 + this.height *2);

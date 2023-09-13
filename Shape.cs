@@ -15,6 +15,19 @@ namespace ArvUppgift
             this.height = height;
         }
 
+
+        virtual public int Area()
+        {
+            return 1;
+        }
+
+        virtual public double Circumferance()
+        {
+            return 2;
+        }
+
+        
+
         
     }
 }

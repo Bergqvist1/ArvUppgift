@@ -10,13 +10,13 @@ namespace ArvUppgift
 
         }
 
-      public int Area()
+      override public int Area()
       {
             int a = height * width /2;
             return a;
       }
 
-      public double Circumferance()
+      override public double Circumferance()
       {
             double c = height + width + Math.Sqrt(height*width + height*width);
             return c;
