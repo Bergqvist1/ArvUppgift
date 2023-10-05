@@ -3,23 +3,26 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace ArvUppgift
 {
-    public class Rectangle: Shape
+    public class Rectangle: IShape
     {
-       
-        public Rectangle(int width, int height): base(width,height)
-        {
+       int b;
 
+       int h;
+        public Rectangle(int B, int H)
+        {
+            b = B;
+            h = H;
         }
 
-        override public int Area()
+        public double Area()
         {
-            return (this.width * this.height);
+            return b*h;
         }
 
-        override public double Circumferance()
+        public double Circumferance()
         {
             
-            return (this.width *2 + this.height *2);
+            return b*2 + h*2;
         }
     }
 }

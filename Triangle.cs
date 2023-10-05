@@ -1,25 +1,30 @@
+using System.Formats.Asn1;
 using System.Security.Cryptography.X509Certificates;
 
 namespace ArvUppgift
 {
-    public class Triangle: Shape
+    public class Triangle: IShape
     {
+       int b;
 
-        public Triangle(int width, int height): base(width,height)
-        {
-
-        }
-
-      override public int Area()
+       int h;
+  
+    
+      public Triangle(int B, int H)
       {
-            int a = height * width /2;
-            return a;
+            b = B;
+            h = H;
       }
 
-      override public double Circumferance()
+      public double Area()
       {
-            double c = height + width + Math.Sqrt(height*width + height*width);
-            return c;
+            return b*h /2;
       }
+
+      public double Circumferance()
+      {
+            return b/h * 3;
+      }
+
     }
 }
